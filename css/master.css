@@ -23,6 +23,7 @@ body,main {
   background-color: white;
   margin: auto;
   border-bottom: 8px solid orange;
+  box-shadow: inset 2px 2px 40px 1px #333;
 }
 
 .login-cadastro article {
