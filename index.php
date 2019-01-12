@@ -21,14 +21,14 @@
         <i class="large material-icons">face</i>
       </div>
       <h1>Login</h1>
-      <form class="" action="index.html" method="post" style="padding: 70px 30px;">
-        <p>Usuário</p>
-        <input type="text" name="usuario">
+      <form class="" action="funcoes/login.php" method="POST" style="padding: 70px 30px;">
+        <p>E-Mail</p>
+        <input type="text" name="UsrEm">
         <p>Senha</p>
-        <input type="password" name="senha">
-        <input type="submit" name="entrar" value="Login"><br>
+        <input type="password" name="UsrPw">
+        <input type="submit" value="Login"><br>
         <a href="#">Perdeu sua senha ?</a><br>
-        <a href="paginas/cadastro.html">Você não tem uma conta ?</a>
+        <a href="paginas/cadastro.php">Você não tem uma conta ?</a>
       </form>
     </div>
     <!--Import jQuery before materialize.js-->

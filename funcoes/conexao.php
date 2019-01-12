@@ -1,3 +1,8 @@
 <?php
-  $conn = new PDO('mysql:host=localhost;dbname=site', 'root', '1q');
+  $localhost = 'localhost';
+  $usuario = 'root';
+  $senha = '1q';
+  $banco = 'site';
+
+  $mysqli = mysqli_connect($localhost, $usuario, $senha, $banco);
  ?>

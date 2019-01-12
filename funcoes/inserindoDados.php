@@ -1,17 +1,12 @@
 <?php
   require_once 'conexao.php';
+  $nome = $_POST['UsrName'];
+  $email = $_POST['UsrEm'];
+  $senha = $_POST['UsrPw'];
 
-  if ($_REQUEST['submit']) {
-    $sql = "INSERT INTO usuarios(nome,sexo,email,senha,cpf,rua,bairro,numero_residencial)
-    VALUES('$_POST[nome]',
-      '$_POST[sexo]',
-      '$_POST[email]',
-      '$_POST[senha]',
-      '$_POST[cpf]',
-      '$_POST[rua]',
-      '$_POST[bairro]',
-      '$_POST[numero_residencial]')";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
-  };
+      if ($valida = mysqli_query($mysqli, "INSERT INTO usuarios (UsrName, UsrEm, UsrPw) VALUES ('$nome', '$email', '$senha')" )) {
+        header('Location: ../paginas/home.php');
+      }else{
+        echo "Não foi possível criar o usuário...<br><a href='../paginas/cadastro.php'>Volte por aqui</a>";
+      }
  ?>

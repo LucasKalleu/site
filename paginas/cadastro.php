@@ -17,15 +17,15 @@
         <i class="large material-icons">face</i>
       </div>
       <h1>Cadastro</h1>
-      <form class="" action="index.html" method="post" style="padding: 70px 30px;">
+      <form class="" action="../funcoes/inserindoDados.php" method="POST" style="padding: 70px 30px;">
         <p>Nome / Usuário</p>
-        <input type="text" name="usuario">
+        <input type="text" name="UsrName" id="UsrName">
         <p>E-mail</p>
-        <input type="email" name="email">
+        <input type="email" name="UsrEm" id="UsrEm">
         <p>Senha</p>
-        <input type="password" name="senha">
-        <input type="submit" name="cadastrar" value="Cadastro"><br>
-        <a href="../index.html">Voltar para o Login</a><br>
+        <input type="password" name="UsrPw" id="UsrPw">
+        <input type="submit" value="Cadastro"><br>
+        <a href="../index.php">Voltar para o Login</a><br>
       </form>
     </div>
     <!--Import jQuery before materialize.js-->
