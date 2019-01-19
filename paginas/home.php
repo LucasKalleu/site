@@ -18,6 +18,10 @@
       .brand-logo {
         font-family: Play Pretend;
       }
+
+      .propaganda-mobile {
+        text-shadow: #000 0.4px -0.4px, #000 -0.4px 0.4px, #000 0.4px 0.4px, #000 -0.4px -0.4px;
+      }
     </style>
   </head>
 
@@ -28,7 +32,7 @@
     <ul id="slide-out" class="side-nav">
       <li> <div class="user-view">
         <div class="background">
-          <img src="../img/bg.jpg" style="width: 100$; height: 125%;">
+          <img src="../img/bg.jpg" style="width: 100%; height: 125%;">
         </div>
         <a href="#!user"> <img src="../img/teste.jpeg" class="circle"> </a>
         <a href="#!name"> <span class="white-text name">Lucas Kalleu</span> </a>
@@ -69,36 +73,42 @@
       <!--Fim Menu -->
 
       <div id="home" class="col s12">
-        <div class="carousel carousel-slider center" data-indicators="true">
-          <div class="carousel-item red white-text" href="#one!" style="background-image: url(../img/bg.jpg); background-size: 100% 200%; background-position: 0% 75%;">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-            <div class="carousel-fixed-item center">
-              <a class="btn waves-effect white grey-text darken-text-2">Acessar</a>
-            </div>
-          </div>
-          <div class="carousel-item amber white-text" href="#two!" style="background-image: url(../img/bg2.jpg); background-size: 100% 200%; background-position: 0% 55%;">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-            <div class="carousel-fixed-item center">
-              <a class="btn waves-effect white grey-text darken-text-2">Compre já !</a>
-            </div>
-          </div>
-          <div class="carousel-item green white-text" href="#three!" style="background-image: url(../img/bg3.jpg); background-size: 100% 200%; background-position: 0% 35%;">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-            <div class="carousel-fixed-item center">
-              <a class="btn waves-effect white grey-text darken-text-2">Alugue já !</a>
-            </div>
-          </div>
-          <div class="carousel-item amber white-text" href="#four!" style="background-image: url(../img/bg4.jpg); background-size: 100% 200%; background-position: 0% 65%;">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-            <div class="carousel-fixed-item center">
-              <a class="btn waves-effect white grey-text darken-text-2">Assita</a>
-            </div>
+
+        <div class="propaganda-mobile">
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="../img/bg.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="../img/bg2.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="../img/bg3.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="../img/bg4.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+
       </div>
 
       <div id="loja" class="col s12">
@@ -132,6 +142,9 @@
     <script type="text/javascript">
       $(".button-collapse").sideNav();
       $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $(document).ready(function(){
+        $('.slider').slider();
+      });
     </script>
   </body>
 </html>
