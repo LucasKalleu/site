@@ -52,7 +52,7 @@
       </div>
       <header>
 
-        <div class="row">
+        <div class="row hide-on-med-and-down">
           <div class="col s12">
             <ul class="tabs teal darken-3">
               <li class="tab col s1"> <a class="white-text" target="_self" href="catalogo.php">Catálogo</a> </li>

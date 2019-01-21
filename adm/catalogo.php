@@ -54,7 +54,7 @@
 
 
 
-        <div class="row">
+        <div class="row hide-on-med-and-down">
           <div class="col s12">
             <ul class="tabs teal darken-3">
               <li class="tab col s1"> <a class="active white-text" target="_self" href="catalogo.php">Catálogo</a> </li>
@@ -72,10 +72,42 @@
 
     <main class="col s12">
 
-      <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Adicionar novo ítem.</h4>
+          <div class="row">
+            <form class="col s12" action="" method="POST">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="titulo" type="text" name="titulo">
+                  <label for="titulo">Insira um título</label>
+                </div>
+              </div>
+              <div class="row file-field input-field">
+                <div class="btn">
+                  <span>Arquivo</span>
+                  <input type="file" name="img">
+                </div>
+                <div class="file-path-wrapper">
+                  <input type="text" class="file-path validate" value="Insira uma imagem" style="color: grey;">
+                </div>
+              </div>
+              <div class="row col s12">
+                <input type="submit" name="enviar" class="btn waves col s4 offset-s4" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>
       </div>
-      
+
+      <div class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+      </div>
+
     </main>
 
     <!--Import jQuery before materialize.js-->
@@ -84,6 +116,9 @@
     <script type="text/javascript">
       $(".button-collapse").sideNav();
       $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
     </script>
   </body>
 </html>
