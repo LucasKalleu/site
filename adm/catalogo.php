@@ -90,7 +90,13 @@
                   <input type="file" name="img">
                 </div>
                 <div class="file-path-wrapper">
-                  <input type="text" class="file-path validate" value="Insira uma imagem" style="color: grey;">
+                  <input type="text" class="file-path validate" value="Tamanho único: 300x300" style="color: grey;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea name="descricao" id="descricao" class="materialize-textarea" data-length="460"></textarea>
+                  <label for="descricao">Insira uma descrição</label>
                 </div>
               </div>
               <div class="row col s12">
@@ -100,7 +106,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+          <a href="catalogo.php" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
         </div>
       </div>
 
