@@ -19,9 +19,6 @@
         font-family: Play Pretend;
       }
 
-      .propaganda-mobile {
-        text-shadow: #000 0.4px -0.4px, #000 -0.4px 0.4px, #000 0.4px 0.4px, #000 -0.4px -0.4px;
-      }
     </style>
   </head>
 
@@ -38,10 +35,10 @@
         <a href="#!name"> <span class="white-text name">Lucas Kalleu</span> </a>
         <a href="#!email"> <span class="white-text email">meudiacasual@gmail.com</span> </a>
       </div> </li>
-      <li> <a href="#!"> <i class="material-icons">local_florist</i>CATÁLOGO </a> </li>
-      <li> <a href="#!"> <i class="material-icons">store</i>USUÁRIOS </a> </li>
-      <li> <a href="#!"> <i class="material-icons">forum</i>LOJA </a> </li>
-      <li> <a href="#!"> <i class="material-icons">video_library</i>AULAS </a> </li>
+      <li> <a href="catalogo.php"> <i class="material-icons">local_florist</i>CATÁLOGO </a> </li>
+      <li> <a href="usuarios.php"> <i class="material-icons">store</i>USUÁRIOS </a> </li>
+      <li> <a href="loja.php"> <i class="material-icons">forum</i>LOJA </a> </li>
+      <li> <a href="aulas.php"> <i class="material-icons">video_library</i>AULAS </a> </li>
       <li> <a href="#!"> <i class="material-icons">close</i>SAIR </a> </li>
     </ul>
     <nav class="nav-extended teal darken-3">
@@ -53,45 +50,30 @@
           </li>
         </ul>
       </div>
-    <header>
-        <div class="nav-content hide-on-med-and-down">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#home">CATÁLOGO</a></li>
-            <li class="tab"><a href="#loja">USUÁRIOS</a></li>
-            <li class="tab"><a href="#feed">LOJA</a></li>
-            <li class="tab"><a href="#aulas">AULAS</a></li>
-          </ul>
+      <header>
+
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs teal darken-3">
+              <li class="tab col s1"> <a class="white-text" target="_self" href="catalogo.php">Catálogo</a> </li>
+              <li class="tab col s1"> <a class="white-text" target="_self" href="usuarios.php">Usuários</a> </li>
+              <li class="tab col s1"> <a class="active white-text" target="_self" href="loja.php">Loja</a> </li>
+              <li class="tab col s1"> <a class="white-text" target="_self" href="aulas.php">Aulas</a> </li>
+              <li class="tab col s1"> <a class="white-text" target="_self" href="loja.php">Sair</a> </li>
+            </ul>
+          </div>
         </div>
-      </nav>
 
-      <!--Fim Menu -->
+      </header>
 
-      <div id="home" class="col s12">
-        CATÁLOGO
-      </div>
+    <!--Fim Menu -->
 
-      <div id="loja" class="col s12">
-        LOJA
-      </div>
-
-      <div id="feed" class="col s12">
-        FEED
-      </div>
-
-      <div id="aulas" class="col s12">
-        AULAS
-      </div>
-
-    </header>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript">
       $(".button-collapse").sideNav();
       $('.carousel.carousel-slider').carousel({fullWidth: true});
-      $(document).ready(function(){
-        $('.slider').slider();
-      });
     </script>
   </body>
 </html>
